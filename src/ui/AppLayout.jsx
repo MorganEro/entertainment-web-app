@@ -7,7 +7,8 @@ const StyledAppLayout = styled.div`
   background-color: var(--color-dark-blue);
   grid-template-columns: 1fr;
   grid-template-rows: auto min-content;
-  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
   grid-template-areas:
     'nav'
     'main';
@@ -22,7 +23,7 @@ const StyledAppLayout = styled.div`
 const NavigationBar = styled.div`
   grid-area: nav;
   height: fit-content;
-  max-width: 100vw;
+  width: 100%;
 
   @media (min-width: 48em) {
     padding: 2.5rem 2.5rem 0 2.5rem;
@@ -36,7 +37,7 @@ const NavigationBar = styled.div`
 
 const MainContent = styled.main`
   grid-area: main;
-  max-width: 100vw;
+  width: 100%;
 `;
 
 function AppLayout() {
