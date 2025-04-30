@@ -11,6 +11,11 @@ const Input = styled.input`
   outline: none;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 16px; /* Prevent iOS zoom */
+  
+  @media (min-width: 48em) {
+    font-size: var(--font-size-lg);
+  }
 
   &:focus,
   &:active {
