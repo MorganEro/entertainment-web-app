@@ -11,25 +11,26 @@ export const TrendingContainer = styled.div`
 `;
 
 export const HomeContainer = styled(ShowContainer)`
-  padding: 1.6rem 0rem 5rem 1.6rem;
+  padding: 1.6rem 1rem 5rem 1rem;
+  max-width: 100%;
 
   @media (min-width: 48em) {
-    padding: 2.5rem 0rem 5rem 2.5rem;
+    padding: 2.5rem 2rem 5rem 2rem;
   }
 
   @media (min-width: 64em) {
-    padding: 5rem 0rem 5rem 3.2rem;
+    padding: 5rem 2.5rem 5rem 2.5rem;
   }
 
   & > *:not(${TrendingContainer}) {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 
     @media (min-width: 48em) {
-      padding-right: 2.5rem;
+      padding-right: 1.5rem;
     }
 
     @media (min-width: 64em) {
-      padding-right: 3.2rem;
+      padding-right: 2rem;
     }
   }
 `;

@@ -6,8 +6,9 @@ const StyledAppLayout = styled.div`
   display: grid;
   background-color: var(--color-dark-blue);
   grid-template-columns: 1fr;
-  grid-template-rows: auto min-content;
-  width: 95%;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
   grid-template-areas:
     'nav'
@@ -15,7 +16,7 @@ const StyledAppLayout = styled.div`
 
   @media (min-width: 64em) {
     grid-template-columns: max-content 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-areas: 'nav main';
   }
 `;

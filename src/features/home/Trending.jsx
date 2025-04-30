@@ -6,13 +6,14 @@ import { useShows } from '../shows/useShows';
 const TrendingList = styled.ul`
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 24rem;
+  grid-auto-columns: minmax(20rem, 24rem);
   list-style: none;
   gap: 1.6rem;
-  overflow-x: scroll;
+  overflow-x: auto;
+  padding-bottom: 1rem; /* Space for potential scrollbar */
 
   @media (min-width: 48em) {
-    grid-auto-columns: 47rem;
+    grid-auto-columns: minmax(35rem, 47rem);
     gap: 4rem;
   }
 
