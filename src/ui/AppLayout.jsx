@@ -7,7 +7,7 @@ const StyledAppLayout = styled.div`
   background-color: var(--color-dark-blue);
   grid-template-columns: 1fr;
   grid-template-rows: auto min-content;
-  width: 100%;
+  width: 95%;
   overflow-x: hidden;
   grid-template-areas:
     'nav'
